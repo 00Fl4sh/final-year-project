@@ -2,23 +2,10 @@ import React, { useState,useEffect } from "react";
 import httpClient from "../httpClient";
 
 function Location(){
-  const [data , setData] = useState([]);
+  
 
-  const apiGet = () => {
-    fetch("/doc")
-    .then((response) =>response.json())
-    .then((json) => {
-      console.log(json);
-      setData(json);
-    });
-  };
-
-  useEffect(() => {
-    apiGet();
-
-  }, []);
 const states = [
-  "Select State","Andra Pradesh","Arunachal Pradesh","Assam","Bihar","Chhattisgarh","Goa","Gujarat","Haryana","Himachal Pradesh","Jammu and Kashmir","Jharkhand","Karnataka","Kerala","MadhyaPradesh","Maharashtra","Manipur","Meghalaya","Mizoram","Nagaland","Odisha","Punjab","Rajasthan","Sikkim","Tamil Nadu","Telangana","Tripura","Uttarakhand","Uttar Pradesh","West Bengal","Chandigarh","puducherry","WestBengal","AndamanNicoba","DadraHaveli","DamanDiu","Delhi"
+  "Select State","Andra Pradesh","Arunachal Pradesh","Assam","Bihar","Chandigarh","Chhattisgarh","Goa","Gujarat","Haryana","Himachal Pradesh","Jammu and Kashmir","Jharkhand","Karnataka","Kerala","MadhyaPradesh","Maharashtra","Manipur","Meghalaya","Mizoram","Nagaland","Odisha","Punjab","Rajasthan","Sikkim","Tamil Nadu","Telangana","Tripura","Uttarakhand","Uttar Pradesh","West Bengal","puducherry","WestBengal","AndamanNicoba","DadraHaveli","DamanDiu","Delhi"
 ];
 
 const districts = {
@@ -27,6 +14,8 @@ const districts = {
 "Arunachal Pradesh": [  "Tawang",  "West Kameng",  "East Kameng",  "Papum Pare",  "Kurung Kumey",  "Kra Daadi",  "Lower Subansiri",  "Upper Subansiri",  "West Siang",  "East Siang",  "Siang",  "Upper Siang",  "Lower Siang",  "Lower Dibang Valley",  "Dibang Valley",  "Anjaw",  "Lohit",  "Namsai",  "Changlang",  "Tirap",  "Longding",],"Assam" : ["Baksa","Barpeta","Biswanath","Bongaigaon","Cachar","Charaideo","Chirang","Darrang","Dhemaji","Dhubri","Dibrugarh","Goalpara","Golaghat","Hailakandi","Hojai","Jorhat","Kamrup Metropolitan","Kamrup (Rural)","Karbi Anglong","Karimganj","Kokrajhar","Lakhimpur","Majuli","Morigaon","Nagaon","Nalbari","Dima Hasao","Sivasagar","Sonitpur","South Salmara Mankachar","Tinsukia","Udalguri","West Karbi Anglong"],
 
 "Bihar" :    ["Araria","Arwal","Aurangabad","Banka","Begusarai","Bhagalpur","Bhojpur","Buxar","Darbhanga","East Champaran","Gaya","Gopalganj","Jamui","Jehanabad","Kaimur","Katihar","Khagaria","Kishanganj","Lakhisarai","Madhepura","Madhubani","Munger","Muzaffarpur","Nalanda","Nawada","Patna","Purnia","Rohtas","Saharsa","Samastipur","Saran","Sheikhpura","Sheohar","Sitamarhi","Siwan","Supaul","Vaishali","West Champaran"],
+
+"Chandigarh":["Chandigarh"],
 
 "Chhattisgarh": ["Balod","Baloda Bazar","Balrampur","Bastar","Bemetara","Bijapur","Bilaspur","Dantewada","Dhamtari","Durg","Gariaband","Janjgir Champa","Jashpur","Kabirdham","Kanker","Kondagaon","Korba","Koriya","Mahasamund","Mungeli","Narayanpur","Raigarh","Raipur","Rajnandgaon","Sukma","Surajpur","Surguja"],
 
@@ -48,7 +37,7 @@ const districts = {
 
 "MadhyaPradesh": ["Agar Malwa","Alirajpur","Anuppur","Ashoknagar","Balaghat","Barwani","Betul","Bhind","Bhopal","Burhanpur","Chhatarpur","Chhindwara","Damoh","Datia","Dewas","Dhar","Dindori","Guna","Gwalior","Harda","Hoshangabad","Indore","Jabalpur","Jhabua","Katni","Khandwa","Khargone","Mandla","Mandsaur","Morena","Narsinghpur","Neemuch","Panna","Raisen","Rajgarh","Ratlam","Rewa","Sagar","Satna","Sehore","Seoni","Shahdol","Shajapur","Sheopur","Shivpuri","Sidhi","Singrauli","Tikamgarh","Ujjain","Umaria","Vidisha"],
 
-"Maharashtra": ["Ahmednagar","Akola","Amravati","Aurangabad","Beed","Bhandara","Buldhana","Chandrapur","Dhule","Gadchiroli","Gondia","Hingoli","Jalgaon","Jalna","Kolhapur","Latur","mumbai","Mumbai Suburban","Navi Mumbai","Nagpur","Nanded","Nandurbar","Nashik","Osmanabad","Palghar","Parbhani","Pune","Raigad","Ratnagiri","Sangli","Satara","Sindhudurg","Solapur","Thane","Wardha","Washim","Yavatmal"],
+"Maharashtra": ["Ahmednagar","Akola","Amravati","Aurangabad","Beed","Bhandara","Buldhana","Chandrapur","Dhule","Gadchiroli","Gondia","Hingoli","Jalgaon","Jalna","Kolhapur","Latur","Mumbai","Navi Mumbai","Nagpur","Nanded","Nandurbar","Nashik","Osmanabad","Palghar","Parbhani","Pune","Raigad","Ratnagiri","Sangli","Satara","Sindhudurg","Solapur","Thane","Wardha","Washim","Yavatmal"],
 
 "Manipur": ["Bishnupur","Chandel","Churachandpur","Imphal East","Imphal West","Jiribam","Kakching","Kamjong","Kangpokpi","Noney","Pherzawl","Senapati","Tamenglong","Tengnoupal","Thoubal","Ukhrul"],
 
@@ -80,7 +69,6 @@ const districts = {
 
 "AndamanNicoba": ["Nicobar","North Middle Andaman","South Andaman"],
 
-"Chandigarh":["Chandigarh"],
 
 "DadraHaveli":["Dadra Nagar Haveli"],
 
@@ -98,6 +86,8 @@ const districts = {
 // const Form = () => {
   const [selectedState, setSelectedState] = useState("-- Select State --");
   const [selectedDistrict, setSelectedDistrict] = useState("");
+  // create const data to store the output from backend
+  const [data , setData] = useState([]);
 
   
 
@@ -115,75 +105,13 @@ const districts = {
     httpClient.post('/doc', { selectedDistrict })
       .then(response => {
         console.log(response.data);
-        // do something with the response from Flask
+        // after retrieved the data from backend set the data to setData 
+        setData(response.data)
       })
       .catch(error => {
         console.log(error);
       });
   };
-
-
-  // const logInUser = async () => {
-      
-  //   try {
-  //     console.log(selectedDistrict);
-  //     await httpClient.post("/doc", {
-  //       selectedDistrict
-  //     })
-  //     .then(response => {
-  //       console.log(response.data);
-  //     })
-  //     .catch(error => {
-  //       console.error(error);
-  //     });
-  //   } catch (error) {
-  //     console.error(error);
-  //   }
-
-
-  // };
-      // window.location.href = "/Home";
-  //   } catch (error) {
-  //     if (error.response.status === 401) {
-  //       alert("Invalid credentials");
-  //     }
-  //   }
-  // };
-
-
-    // const varDistrict = {selectedDistrict};
-  
-    // fetch('/doc', {
-    //   method: 'POST',
-    //   headers: {
-    //     'Content-Type': 'application/json'
-    //   },
-    //   body: JSON.stringify(varDistrict)
-    // })
-    // .then((response) => response.json())
-    // .then((data) => {
-    //     console.log(data)
-    // })
-
-
-
-
-
-    // const [data , setData] = useState([]);
-  
-    // const apiGet = () => {
-    //   fetch("/doc")
-    //   .then((response) =>response.json())
-    //   .then((json) => {
-    //     console.log(json);
-    //     setData(json);
-    //   });
-    // };
-  
-    // useEffect(() => {
-    //   apiGet();
-  
-    // }, []);
 
   return (
     <>
@@ -216,10 +144,10 @@ const districts = {
           </select>
           </div>
           {/* onClick={() => logInUser()} */}
-        <div style={{ display: 'inline-block' ,marginLeft:"200px" }}><button type="button" style={{borderRadius:"4px",
+        {/* <div style={{ display: 'inline-block' ,marginLeft:"200px" }}><button type="button" style={{borderRadius:"4px",
     padding: "7px 12px 7px 12px",
     fontWeight:"bold",background:"antiquewhite"}} >Search</button></div>
-  
+   */}
         </form>
         <div style={{ margin: "99px" }}>
       <div className="flex-container">
