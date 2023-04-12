@@ -1,13 +1,16 @@
 import React from 'react'
+// import {Link} from "react-router-dom";
 
 const Footer = () => {
   return (
+
+    <>   
     <div className='main-footer'>
         <div className='container'>
             <div className='row'>
             {/* column 1 */}
             <div className='col'>
-                <h4 className='hh'>HAPPY HORMONES</h4>
+                <h3 className='hh'>HAPPY HORMONES</h3>
                 <ul className='list'>
                     <li>Happy Hormones will help you if you are struggling with mental problems or
                          simply want to be more aware of your mood and wellbeing, this accompanies 
@@ -23,31 +26,33 @@ const Footer = () => {
             </div>
             {/* column 2 */}
             <div className='col'>
-                <h4 className='fu'>FOLLOW US</h4>
+                <h3 className='fu'>FOLLOW US</h3>
                 <ul className='list1'>
                     <li>
                         <a href='https://instagram.com/_.kimchii.___?igshid=YmMyMTA2M2Y=' target='_blank' rel="noreferrer">
-                        <i class="fa-brands fa-instagram fa-2xs"></i>
+                        <i className="fa-brands fa-instagram fa-2xl"></i> 
                         </a>
-                     </li>
+                     </li> <br/> 
                     <li>
                         <a href='https://twitter.com/__P_R_A_V_I_N__?t=9A90wE8-E0QwgQgKqw_wCg&s=09' target='_blank' rel="noreferrer">
-                        <i class="fa-brands fa-twitter"></i>
+                        <i className="fa-brands fa-twitter fa-2xl"></i>
                         </a>
-                     </li>
-                    <li><i class="fa-brands fa-linkedin"></i></li>
+                     </li><br/> 
+                    <li><i className="fa-brands fa-linkedin fa-2xl"></i></li>
                 </ul>
             </div>
             </div>
             <hr/>
                 <div className='row'>
                     <p className='col-sm'>
-                        &copy;{new Date().getFullYear()} HAPPY HORMONES | All rights reserved | Terms of Service | Privacy
+                    &copy;{new Date().getFullYear()} HAPPY HORMONES | All rights reserved | Terms of Service | Privacy
                     </p>
                 </div>
         </div>
     </div>
+    </>
+ 
   )
 }
 
-export default Footer
+export default Footer
