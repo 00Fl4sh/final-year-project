@@ -112,14 +112,12 @@ h4{
   text-decoration: underline;
   color: white;
 }
-.box1{
+/* /* .box1{
   /* background-color: #a2d4dc; */
   /* padding: 10px; */
-  background-color: white;
+  /* background-color: white; */
   /* background:-webkit-repeating-radial-gradient(rgb(231, 233, 213),white); */
-
-
-}
+/* }  */
 
 .para1{
   padding: 30px 30px 0px 30px;
@@ -243,8 +241,12 @@ h4{
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 2rem !important;
-    margin-left: auto;
+    /* margin-left: auto; */
     font-size: large;
+    width: 540px;
+    overflow: overlay;
+    height: 173px;
+
   }
 
 
@@ -260,7 +262,6 @@ h4{
    border-radius: 20px;   
    /* margin-right:10px; */
 }
-
 .iframeContainer div{
   
     background: black;
@@ -279,11 +280,10 @@ h4{
   /* top:10px; */
   left: 10px;
   width: 1500px;
-  height: 2000px;
+  height: 1900px;
   max-width:-webkit-fill-available;
+  overflow: scroll;
 }
-
-
 .begins{
   margin: 5%;
   padding: 0% 50% 0% 0%;
@@ -306,11 +306,6 @@ h4{
   padding: 0% 0% 3% 20%;
 /* content: ; */
 }
-
-
-
-
-
 
 .yellow-banner-container {
   max-width: 1225px;
@@ -335,7 +330,7 @@ h4{
   z-index: 1;
   /* width: 1519px; */
   margin-bottom: -50px;
-  margin-top: -10px;
+  /* margin-top: -75px; */
 }
 
 .row {
@@ -399,10 +394,10 @@ h4{
   overflow:auto;
   flex-wrap: unset;
   /* background:-webkit-repeating-radial-gradient(rgb(216, 215, 213), rgb(207, 177, 140)); */
-  background-color:rgb(207, 177, 140);
+  background-color:rgb(222, 194, 159);
   height: 326px;
-  width: 84vw;
-  border-radius: 15px;
+  width: 82vw;
+  border-radius: 8px;
 
   
 }
@@ -419,20 +414,40 @@ h4{
     }
     .om button{
       outline: none;
+      background-color: teal; 
+
       /* background-color: #2b85a2; */
       background:repeating-linear-gradient(#2b85a2,#6cc6e3);
-      /* color: rgb(19, 19, 19); */ 
+      color: oldlace; 
+      
+      border: 2px solid rgb(255, 255, 255);     
+      min-inline-size:fit-content;
+      padding: 15px 95px;
+      margin-left: 10px;
+      margin-top: 15px;
+      font-size: 25px;
+    }
+    .om button:hover{
+      /* background-color: teal;  */
+      background:repeating-linear-gradient(teal ,rgb(10, 180, 180));
+    color: white;
+    }
+    .om2 button{
+      outline: none;
+      /* background-color: #2b85a2; */
+      background:repeating-linear-gradient(#2b85a2,#6cc6e3);
+      color: oldlace; 
       /* transition: 1s; */
       /* border-radius: 0.3em; */
       border: 2px solid rgb(255, 255, 255);     
       min-inline-size:fit-content;
       padding: 18px;
-      padding: 20px 518px 20px 608px;
+      padding: 10px 538px 10px 608px;
       margin-left: 14px;
-      margin-top: 15px;
+      margin-top: -34px;
       font-size: 30px;
     }
-    .om button:hover{
+    .om2 button:hover{
       /* background-color: #70939f;  */
       background:repeating-linear-gradient(teal ,rgb(10, 180, 180));
     color: white;
@@ -468,14 +483,22 @@ h4{
 
 
     .inside{
-      background: -webkit-repeating-radial-gradient(bisque,white);
+      height: 500px;
+      overflow:auto;
+      /* background: -webkit-repeating-radial-gradient(bisque,white); */
       /* background: bisque; */
-    width: 1018px;
-    border-radius: 10px;
-    margin-left: 223px;
-    padding-bottom: 5px;
-    padding-top: 5px;
-
+    /* width: 1018px; */
+    /* border-radius: 0px; */
+    /* margin-left: 223px; */
+    /* padding-bottom: 5px; */
+    /* padding-top: 5px; */
+    }
+    .inside::-webkit-scrollbar{
+      background-color: teal;
+      width: 10px;
+    }
+    .inside::-webkit-scrollbar-thumb{
+      background-color: pink;
     }
 
 
@@ -492,43 +515,45 @@ h4{
     }
 
     .labber{
-      background-color:#b3a5a5;
-      width:60vw;
-      padding: 4%;
+      background-color:#613b3b;
+      width:40vw;
+      padding: 3%;
       text-align:center;
-      margin-left:5vw;
+      /* margin-left:5vw; */
       border-radius: 10px;
       font-weight: 600;
       margin-top: 10px;
+      color: white;
     }
     .labber2{
-      background-color: #aae4d1;
-      width:60vw;
-      padding: 4%;
+      background-color: #0e8e63;
+      width:40vw;
+      padding: 3%;
       text-align:center;
-      margin-left:5vw;
-      border-radius: 10px;
+      /* margin-left:5vw; */
+      border-radius: 7px;
       font-weight: 600;
       margin-top: 10px;
+      color: white;
 
 
     }
     #triangle-down {
-      width: 0;
+    width: 0;
     height: 0;
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
-    border-top: 100px solid  #aae4d1;
-    margin-left: 500px;
+    border-top: 100px solid  #0e8e63;
+    margin-left: 250px;
     margin-top: -50px;
     }
     #triangle-down2 {
-      width: 0;
+    width: 0;
     height: 0;
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
-    border-top: 100px solid #b3a5a5 ;
-    margin-left: 500px;
+    border-top: 100px solid #613b3b ;
+    margin-left: 250px;
     margin-top: -50px;
     }
     /* .CountryDrop{
@@ -628,6 +653,7 @@ h4{
   position: relative;
   z-index: -1;
   border-radius: 8px;
+  margin-bottom: 110px;
 }
 /* signin page  */
 
@@ -644,6 +670,7 @@ h4{
   position: relative;
   z-index: -1;
   border-radius: 8px;
+  margin-bottom: 100px;
 }
 .signin h3{
   margin-left:690px;
@@ -668,27 +695,41 @@ h4{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* profile */
 body{
 	background-color: #eee;
 }
 .card{
-	background-color: #fff;
-	width: 350px;
-	border-radius: 33px;
+  background:repeating-linear-gradient(#fae4e4,white) ;
+	width: 465px;
+	border-radius: 8px;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	padding: 2rem !important;
+	/* padding: 2rem !important; */
+  margin: 5px;
+  text-align: justify;
+  overflow: overlay;
+  height: 173px;
+}
+.card::-webkit-scrollbar{
+  width: 9px;
+  border-radius: 2%;
+}
+.card::-webkit-scrollbar-track{
+  background: teal;
+}
+.card::-webkit-scrollbar-thumb{
+  background: rgb(12, 184, 184);
+}
+.card1::-webkit-scrollbar{
+  width: 9px;
+  background: grey;
+  border-radius: 1%;
+}
+.card1::-webkit-scrollbar-track{
+  background: teal;
+}
+.card1::-webkit-scrollbar-thumb{
+  background: rgb(12, 184, 184);
 }
 .top-container{
 	display: flex;
@@ -793,7 +834,54 @@ body{
 
 
 
+/* progress */
+.wrapper {
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+}
 
+.circle {
+
+  width: 280px;
+  height: 150px;
+  background-color: white;
+  border-top-left-radius: 380px;
+  border-top-right-radius: 380px;
+  border: 30px solid pink;
+  border-bottom: 0;
+  transition: all 1s ease;
+  
+  transform-origin: bottom;
+  position: absolute;
+  z-index: 1;
+  transform: rotate(-180deg);
+  
+  bottom: 0;
+  left: -20px;
+}
+
+.circle-out {
+  width: 285px;
+  height: 145px;
+  background-color: white;
+  border-top-left-radius: 180px;
+  border-top-right-radius:180px;
+  border: 30px solid #ededed;
+  border-bottom: 0px;
+  position: relative;
+  margin-left: 160px; 
+  margin-top: 150px;
+}
+.text {
+  font-size: 35px;
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  color:peru;
+}
 /* flexx */
 
 .flex1{
@@ -858,6 +946,7 @@ border-radius: 8px;
     font-size: 19px;
     /* z-index: 1; */
     margin: 26px 59px;
+    margin-bottom: 90px;
 }
 .heal h3{
   color: orange;
@@ -931,14 +1020,18 @@ border-radius: 8px;
 .flex div:hover{
   background-color: #f2e8d7;
 }
+.extend{
+  display:flex;
+  flex-wrap:nowrap;
+
+}
 
 
 
-
- @media screen and (max-width:1407px){
-  /* body{ 
-    background-color: red; 
-   } */
+ @media screen and (max-width:1406px){
+  body{ 
+    background-color: rgb(41, 33, 33); 
+   }
   .hh {
     margin-left: -4rem;
     padding-top: 2rem;
@@ -951,13 +1044,22 @@ border-radius: 8px;
   text-decoration: none;
   list-style: none;
   margin-left: 13rem;
+
+}
+.card{
+  width: 420px;
+}
+.card1{
+  width: 400px;
+  
+  
 }
 }
   
 @media screen and (max-width: 1280px) {
-  /* body {
+  body {
       background-color: #0740fa;
-     } */
+     }
      .iframeContainer {
          position: relative;
          float: right; 
@@ -1041,11 +1143,22 @@ border-radius: 8px;
     .logg{
       margin-left: auto;
       margin-right: auto;
+    } .om button{
+      font-size: 20px
+    }
+    .card{
+      width: 390px;
+    }
+    .card1{
+      width: 400px;  
     }
     
     }
     
 @media screen and (max-width: 1200px) {
+  body{
+    background: pink;
+  }
   .signin h3{
     margin-left: 535px;
   }
@@ -1076,9 +1189,22 @@ border-radius: 8px;
     margin-left: auto;
     margin-right: auto;
   }
+  .om button{
+    padding:30px 34px;
+    font-size: 25px;
+  }
+  .card{
+    width: 360px;
+  }
+  .card1{
+    width: 410px;  
+  }
 }
 
-/* @media screen and (max-width: 1150px) {
+@media screen and (max-width: 1150px) {
+  body{
+    background: yellow;
+  }
   .signin h3{
     margin-left: 425px;
   }
@@ -1110,13 +1236,26 @@ border-radius: 8px;
     margin-left: auto;
     margin-right: auto;
   }
+  .om button{
+    padding:30px 60px;
+    font-size: 19px;
+  }
+  .extend{
+    padding: 0px;
+  }
+  .card{
+    width: 303px;
 
+  }
+  .card1{
+    width: 325px;
 
-} */
+  }
+}
 @media screen and (max-width: 1000px) {
-  /* body {
-      background-color: rgb(167, 184, 255);
-     } */
+  body {
+      background-color:orangered;
+     }
      .iframeContainer {
 
       position: relative;
@@ -1194,13 +1333,47 @@ border-radius: 8px;
     margin-left: auto;
     margin-right: auto;
 }
+.om button{
+  padding:30px 48px;
+  font-size: 18px;
+  margin-top: 10px;
+  /* margin-bottom:-100px; */
+}
+.extend{
+  padding-top: 12px;
+  margin-bottom: -35px;
+}
+.card{
+  width: 280px;
+}
+.card1{
+  width: 290px;  
+}
 }
 @media screen and (max-width: 900px) {
+  body{
+    background: green;
+  }
   .signin h3{
     margin-left: 350px;
   }
   .signin p{
     padding-left: 325px;
+  }
+  .om button{
+    padding-left: auto;
+  padding-right: auto;
+    font-size: 16px;
+    margin-top: 30px;
+  }
+  .extend{ 
+    padding: 0px;
+  }
+  .card{
+    width: 260px;
+  }
+  .card1{
+    width: 270px;  
   }
 } 
 
@@ -1210,8 +1383,11 @@ border-radius: 8px;
 
 
 @media screen and (max-width: 850px) {
+  body{
+    background: purple;
+  }
   .signin h3{
-    margin-left: 315px;
+  margin-left: 315px;
   margin-top: 40px;
   }
   .signin p{
@@ -1237,5 +1413,11 @@ border-radius: 8px;
     margin-right: auto;
     margin-top: -480px;
   }
+  .card{
+    width: 240px;
+  }
+  .card1{
+    width: 250px;  
+  }
+
 } 
-  

@@ -73,7 +73,7 @@ function Take() {
 {/* 1st que  */}
 
         <div className='check1'>
-            <h3  >Little interest or pleasure in doing things</h3> 
+            <h3 >Strained?</h3> 
             
             <div className="form-check">
               <input  className="form-check-input" onChange={handleChange} value={formData.pleasure || "0"} type="radio" name="pleasure"  id="flexRadioDefault1"/>
@@ -104,7 +104,7 @@ function Take() {
 {/* 2nd que  */}
 
         <div className='check2' data-aos="fade-bottom">
-            <h3>Feeling down, depressed, or hopeless</h3> 
+            <h3>Inadequate?</h3> 
             
             <div className="form-check">
               <input  className="form-check-input" onChange={handleChange} value={formData.Feeling || "0"} type="radio" name="Feeling"  id="flexRadioDefault5"/>
@@ -135,7 +135,7 @@ function Take() {
 {/* 3rd que  */}
 
         <div className='check1'data-aos="fade-right">
-            <h3>Trouble falling or staying asleep, or sleeping too much</h3> 
+            <h3>Overextended?</h3> 
             
             <div className="form-check">
               <input  className="form-check-input" onChange={handleChange} value={formData.Trouble || "0"} type="radio" name="Trouble"  id="flexRadioDefault9"/>
@@ -165,7 +165,7 @@ function Take() {
 {/* 4th que  */}
 
         <div className='check2'data-aos="fade-left">
-            <h3> Feeling tired or having little energy</h3> 
+            <h3> No sense of getting ahead?</h3> 
             
             <div className="form-check">
               <input  className="form-check-input" onChange={handleChange} value={formData.tired || "0"} type="radio" name="tired"  id="flexRadioDefault13"/>
@@ -196,7 +196,7 @@ function Take() {
 {/* 5th que  */}
 
         <div className='check1'data-aos="fade-bottom">
-            <h3>Poor appetite or overeating</h3> 
+            <h3>Swamped by your responsibilities?</h3> 
             
             <div className="form-check">
               <input  className="form-check-input" onChange={handleChange} value={formData.Poor || "0"} type="radio" name="Poor"  id="flexRadioDefault17"/>
@@ -227,7 +227,7 @@ function Take() {
 
 {/* 6rd que */}
 <div className='check2'data-aos="fade-right">
-            <h3>Feeling bad about yourself or that you are a failure or have let yourself or your family down</h3> 
+            <h3>That the odds were against you?</h3> 
             
             <div className="form-check">
               <input className="form-check-input" type="radio" onChange={handleChange} value={formData.Feeling_bad || "0"}  name="Feeling_bad" id="flexRadioDefault21"/>
@@ -258,7 +258,7 @@ function Take() {
 
 {/* 7rd que */}
 <div className='check1'data-aos="fade-left">
-            <h3>Trouble concentrating on things, such as reading the newspaper or watching television</h3> 
+            <h3>that there wasn't enough time to get to everything?</h3> 
             
             <div className="form-check">
               <input className="form-check-input" type="radio" onChange={handleChange} value={formData.concentrating || "0"} name="concentrating" id="flexRadioDefault25"/>
@@ -289,7 +289,7 @@ function Take() {
 
 {/* 8rd que */}
 <div className='check2'data-aos="fade-bottom">
-            <h3>Moving or speaking so slowly that other people could have noticed. Or the opposite being so figety or restless that you have been moving around a lot more than usual</h3> 
+            <h3>like you were rushed?</h3> 
             
             <div className="form-check">
               <input className="form-check-input" type="radio" onChange={handleChange} value={formData.Moving || "3"} name="Moving" id="flexRadioDefault29"/>
@@ -319,7 +319,7 @@ function Take() {
 
 {/* 9rd que */}
 <div className='check1'data-aos="fade-bottom">
-            <h3>Thoughts that you would be better off dead, or of hurting yourself</h3> 
+            <h3>like you couldn't cope?</h3> 
             
             <div className="form-check">
               <input className="form-check-input" type="radio" onChange={handleChange} value={formData.Thoughts || "0"} name="Thoughts" id="flexRadioDefault33"/>

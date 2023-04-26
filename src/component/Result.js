@@ -1,37 +1,50 @@
-// import React, {useState ,   useEffect} from "react";
-// import { json } from "react-router-dom";
 
+import { useState, useEffect } from "react";
+// import $ from "jquery";
+import { useNavigate } from "react-router-dom";
 
-function FetchAPI(){
+function SemiCircleProgressBar({ percent }) {
+  let bar;
+  percent=6;
+  
+  
+  useEffect(() => {
+    bar = document.getElementById("bar");
+  }, []);
+  
+  function setProgress(percent) {
+    const p = 180 - (percent / 100) * 180;  
+    bar.style.transform = `rotate(-${p}deg)`;
+  }
+  
+  useEffect(() => {
+    setProgress(percent);
+  }, [percent]);
+  
+  const Navigate=useNavigate();
   return (
-    <div>
-    <div className="result1">
-      <br />
-      <br />
-      <h1>HURRAYYY!!!</h1>
-      <h2>We determined that you have a low level of stress.</h2>
-      <h3>We would therefore like to propose a few tips to maintain the same.</h3>
-    </div>
-    <img
-      src="https://img.freepik.com/free-photo/two-people-holding-hands-together-with-love-warmth-wooden-table_1150-26177.jpg"
-      alt="img2"
-      style={{
-        borderRadius: "146px",
-        height: "299px",
-        width: "302px",
-        marginLeft: "1017px",
-        marginTop: "-333px",
-        marginBottom: "100px",
-      }}
-    ></img>
+    <>
+    <div className="wrapper">  
+      <div className="circle-out">
+        <div id="bar" className="circle"></div>
+        <span className="text">Minimal</span>
+      </div>
 
-    <div
-      style={{
-        backgroundColor: " -webkit-repeating-radial-gradient(grey,bisque)",
-        paddingBottom: "40px", marginBottom:"-90px",
-      }}
-    >
-      <h4> STEPS TO REDUCE STRESS</h4>
+    </div>
+    <br/>
+    <h5 style={{marginLeft:"80px",color:"teal"}}>Minimal levels of Symptoms seen in depression</h5>
+    <p style={{background:"teal",color:"white",padding:"10px", width:"30%",marginLeft:"80px",borderRadius:"10px",letterSpacing:"1px", marginTop:"30px"}}>
+    We determined that you have a minimal level of depression.
+    We would therefore like to propose a few tips to maintain the same.</p>
+    <div style={{marginLeft:"790px",color:"teal", marginBottom:'0px',marginTop:'-400px' }} >
+
+    <h2 >Find Near-by psychiatrist here</h2>
+
+        <button className="cssbuttons-io-button" style={{background:"teal", color:"white", marginLeft:"460px", marginTop:"-50px"}} onClick={()=>Navigate('/Location')}>
+          Click Me...</button>
+          <br/>
+
+    <h4 style={{marginRight:"60px"}}> STEPS TO REDUCE STRESS</h4>
       <div className="inside">
         <p className="labber2">1.Sit or lie down in a comfortable place.</p>
         <div id="triangle-down"></div>
@@ -89,11 +102,36 @@ function FetchAPI(){
         </p>
         {/* <div id="triangle-down"></div> */}
       </div>
-    </div>
+    </div>  
+    <h4 style={{fontWeight:"500", marginTop:"40px", marginRight:"818px"}}>There are different types of depression</h4><br/>
+    <h6 style={{fontWeight:"600", marginLeft:"40px"}}>Major Depressive Disorder (MDD)</h6>
+{/* 
+<h6 style={{color:"teal"}}> More commonly known as Major Depression, an MDD diagnosis means you probably feel depressed most of the time, multiple days in a week.
+Symptoms of Major Depression:</h6> */}
+<ul style={{marginLeft:"20px"}}>
+  <li>Loss of interest in day-to-day activities</li>
+  <li>Loss of pleasure from activities you would normally enjoy</li>
+  <li>Trouble falling asleep at night, and feeling drowsy during daytime</li>
+  <li> Feeling restless or agitated but cannot explain why</li>
+  <li>Unable to concentrate or make decisions</li>
+  <li>Feelings of low self-worth</li>
+  <li> Suicidal thoughts</li>
+</ul>
+<h6 style={{fontWeight:"600",marginLeft:"40px"}}>Persistent Depressive Disorder (PDD)</h6> 
+{/* <h6 style={{color:"teal"}}>Depression that lasts for 2 years or longer is classified as Persistent Depressive Disorder. Two depressive conditions – dysthymia (low-grade persistent depression) and chronic major depression – that were diagnosed separately in the past now fall under PDD.
+Symptoms of PDD:</h6> */}
+<ul style={{marginLeft:"20px"}}>
+<li>Drastic changes in sleep patterns – sleeping too much or too little</li>
+<li>Drastic changes in eating patterns – overeating or not eating enough</li>
+<li>Constant fatigue and low energy levels </li>
+<li>Feelings of helplessness and low self-esteem</li>
+<li>enable to concentrate or make decisions</li>
 
-      </div>
-    
-    
-);
+</ul>
+
+
+</>
+  );
 }
-export default FetchAPI;
+
+export default SemiCircleProgressBar;

@@ -155,10 +155,10 @@ const districts = {
           Suggestions
         </h3>
         <div style={{display :"flex"}}>
-            {data.map(item =>
+            {data.map(item => 
               <div className="btn">
               
-              <a href={item.profile_link} target='_blank' rel="noreferrer">{item.doc_name}</a>
+              <a style={{color:'black'}} href={item.profile_link} target='_blank' rel="noreferrer">{item.doc_name}</a>
               <br />
               {/* {item.year_of_exp} Years Experience Overall */}
 

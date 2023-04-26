@@ -197,7 +197,7 @@ function Home() {
 
 
       
-      {/* <div>
+      {/* <>
         <div className="para2" data-aos="fade-bottom">
           <h4 style={{fontSize:"30px"}}>SYMPTOMS</h4>
           <br/>
@@ -233,59 +233,29 @@ function Home() {
           {/* <img src="https://cdn-icons-png.flaticon.com/512/5483/5483442.png" alt="symptoms" width="300px" height="270px"/> */}
         {/* </div> */}
       {/* </div> */} 
-
-      <div className="">
-        <div className="om" data-aos="fade-bottom">
-          {/* <h4 style={{fontSize:"30px"}}>WHEN TO SEE A DOCTOR</h4> */}
-          <p>
-    <button className="btn5 btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
-     WHEN TO SEE A DOCTOR
-    </button> 
-         </p>
-  <div style={{minHeight:"12px"}}>
-    <div className="collapse collapse-horizontal" id="collapseWidthExample">
-      <div className="card1 card-body" style={{width:"1514px"}}>
-      If you have any signs or symptoms of a mental illness, see your primary care provider or a mental health professional. Most mental illnesses don't improve on their own, and if untreated, a mental illness may get worse over time and cause serious problems.      </div>
-    </div>
-  </div>
-          {/* <p>
-            If you have any signs or symptoms of a mental illness, see your
-            primary care provider or a mental health professional. Most mental
-            illnesses don't improve on their own, and if untreated, a mental
-            illness may get worse over time and cause serious problems.
-          </p> */}
-          {/* <img src={require('./public/mental-health10.png')} />         */}
-          {/* <img src='./public/metal-health10.png' alt="mental-health10.png" width="230px" height="200px"/> */}
-        </div>
       </div>
-      <br />
 
-      {/* <div className="para4" data-aos="fade-bottom">
-        <h4 style={{fontSize:"30px"}}>IF YOU HAVE SUICIDAL THOUGHTS</h4>
-        <p style={{paddingLeft:"0px"}}>
-          <strong>Suicidal thoughts and behavior are common with some mental illnesses.
-          If you think you may hurt yourself or attempt suicide, get help right
-          away:</strong>
-        </p>
-        <ul>
-        <li>Call 911 or your local emergency number immediately.</li>
-        <li>Call your mental health specialist.</li>
-        <li>Call a suicide hotline number.</li>
-        <li>Seek help from your primary care provider.</li>
-        <li>Reach out to a close friend or loved one.</li>
-        <li>
-          Contact a minister, spiritual leader or someone else in your faith
-          community.
-        </li></ul>
-        <p style={{paddingLeft:"280px"}}>Suicidal thinking doesn't get better on its own — so get help.</p>
-        {/* <img src="{{ url_for('static', filename ='img/mental-health.png') }}" alt="mental-health" width="290px" height="240px"/> */}
-      {/* </div> */}
-      {/* <br /> */} 
-
-
-
-      <div className="para5"data-aos="fade-bottom">
-        <h4 style={{fontSize:"30px"}}>HELPING A LOVED ONE</h4>
+      <div className="extend">
+        <div className="om" >
+          <p>
+          <button className="btn5 btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+          WHEN TO SEE A DOCTOR
+          </button> 
+          </p>
+        <div className="collapse collapse-horizontal" id="collapseWidthExample">
+          <div className="card card-body" style={{width:""}}>
+          If you have any signs or symptoms of a mental illness, see your primary care provider or a mental health professional. Most mental illnesses don't improve on their own, and if untreated, a mental illness may get worse over time and cause serious problems.      </div>
+          </div>
+        </div>
+ 
+        <div className="om" >
+          <p>
+          <button className="btn5 btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample2" aria-expanded="false" aria-controls="collapseWidthExample2">
+          HELPING A LOVED ONE
+         </button>
+         </p> 
+        <div className="collapse collapse-horizontal" id="collapseWidthExample2">
+          <div className="card card-body" style={{width:""}}>
         <p>
           If your loved one shows signs of mental illness, have an open and
           honest discussion with him or her about your concerns. You may not be
@@ -295,19 +265,22 @@ function Home() {
           even be able to go along to the appointment.
           If your loved one has done self-harm or is considering doing so, take
           the person to the hospital or call for emergency help.
+        </p>  
+          </div>
+          </div>
+        </div>
+        <div className="om" >
+        <p>
+        <button className="btn5 btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample3" aria-expanded="false" aria-controls="collapseWidthExample3">
+          CAUSES OF MENTAL HEALTH
+        </button> 
         </p>
-        {/* <img src="{{ url_for('static', filename ='img/mental-health(2).png') }}" alt="mental-health(2)" width="270px" height="220px"/> */}
-      </div>
-      <br />
-      <br />
-      <div className="para6" data-aos="fade-bottom">
-        <h4 style={{fontSize:"30px"}}>CAUSES</h4>
+        <div className="collapse collapse-horizontal" id="collapseWidthExample3">
+         <div className="card1 card-body" style={{width:""}}>
         <p>
           <strong>Mental illnesses, in general, are thought to be caused by a variety of
           genetic and environmental factors:</strong>
         </p>
-        <br />
-
         <li>
           <strong>Inherited traits:</strong> Mental illness is more common in
           people whose blood relatives also have a mental illness. Certain genes
@@ -326,8 +299,58 @@ function Home() {
           impaired, the function of nerve receptors and nerve systems change,
           leading to depression and other emotional disorders.
         </li>
+        </div></div></div>
+        </div>
+
+
+    
+  
+
+
+
+
+      {/* <div className="para5"data-aos="fade-bottom">
+        <h4 style={{fontSize:"30px"}}>HELPING A LOVED ONE</h4>
+        <p>
+          If your loved one shows signs of mental illness, have an open and
+          honest discussion with him or her about your concerns. You may not be
+          able to force someone to get professional care, but you can offer
+          encouragement and support. You can also help your loved one find a
+          qualified mental health professional and make an appointment. You may
+          even be able to go along to the appointment.
+          If your loved one has done self-harm or is considering doing so, take
+          the person to the hospital or call for emergency help.
+        </p>
+      </div>
+      <br />
+      <br />
+      <div className="para6" data-aos="fade-bottom">
+        <h4 style={{fontSize:"30px"}}>CAUSES</h4>
+        <p>
+          <strong>Mental illnesses, in general, are thought to be caused by a variety of
+          genetic and environmental factors:</strong>
+        </p>
         <br />
-        {/* <img src="{{ url_for('static', filename ='img/mhf.png') }}" alt="mhf"/> */}
+
+        <li>
+          <strong>Inherited traits:</strong> Mental illness is more common in
+          people whose blood relatives also have a mental illness. Certain genes
+          may increase your risk of developing a mental illness, and your life
+          situation may trigger it.
+        </li>
+        <li> *
+          <strong>Environmental exposures before birth:</strong> Exposure to
+          environmental stressors, inflammatory conditions, toxins, alcohol or
+          drugs while in the womb can sometimes be linked to mental illness.
+        </li>
+        <li>
+          <strong>Brain chemistry:</strong> Neurotransmitters are naturally
+          occurring brain chemicals that carry signals to other parts of your
+          brain and body. When the neural networks involving these chemicals are
+          impaired, the function of nerve receptors and nerve systems change,
+          leading to depression and other emotional disorders.
+        </li>
+        <br />
       </div>
       {/* </div> */}
 
@@ -384,7 +407,7 @@ function Home() {
         <li> Heart disease and other medical conditions</li></ul>
       </div>
      */}
-      <div className="para10" data-aos="fade-bottom">
+      {/* <div className="para10" data-aos="fade-bottom">
         <h4 style={{fontSize:"30px"}}>PREVENTION</h4>
         <p className="inpara4" style={{marginBottom:"0px"}}>
           There's no sure way to prevent mental illness. However, if you have a
@@ -419,8 +442,8 @@ function Home() {
             physical activity.
           </li>
           <br />
-          </div>
-          </div>
+          </div> */}
+          {/* </div> */}
           {/* <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
           AOS.init();
