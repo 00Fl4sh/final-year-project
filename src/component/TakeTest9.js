@@ -29,17 +29,19 @@ function Take() {
     })
     .then(response9 => response9.json())
     .then(data => {
-        console.log('Request succeeded:', data["output"])
-        if (parseFloat(data["output"]) >= 98.7) {
-          console.log("A");
-          window.location.href = "/Tp";
-        } else if (parseFloat(data["output"]) >= 41.15 && parseFloat(data["output"]) < 98.7) {
-          console.log("B");
-          window.location.href = "/Mod";
-        } else if (parseFloat(data["output"]) >= 14.099999999999998 && parseFloat(data["output"]) < 41.15) {
-          console.log("C");
-          window.location.href = "/Min";
-        // } else if (parseFloat(data["output"]) >= 60 && parseInt(data["output"]) < 70) {
+      console.log('Request succeeded:', data["output"])
+      if (parseFloat(data["output"]) >= 98.7) {
+        console.log("A");
+        window.location.href = "/Tp";
+      } else if (parseFloat(data["output"]) >= 41.15 && parseFloat(data["output"]) < 98.7) {
+        console.log("B");
+        window.location.href = "/Mod";
+      } else if (parseFloat(data["output"]) >= 31.15 && parseFloat(data["output"]) < 41.15) {
+        console.log("c");
+        window.location.href = "/Min";
+      } else if (parseFloat(data["output"]) >= 14.099999999999998 && parseFloat(data["output"]) < 31.15) {
+        console.log("d");
+        window.location.href = "/Result";        // } else if (parseFloat(data["output"]) >= 60 && parseInt(data["output"]) < 70) {
         //   console.log("D");
         //   window.location.href = "/Min";       
         } else {
@@ -79,7 +81,7 @@ function Take() {
               <input  className="form-check-input" onChange={handleChange} value={formData.pleasure || "0"} type="radio" name="pleasure"  id="flexRadioDefault1"/>
               <label className="form-check-label" htmlFor="flexRadioDefault1">
               Did not apply to me at all
-              </label>f
+              </label>
             </div>
             <div className="form-check">
                  <input className="form-check-input" onChange={handleChange} value={formData.pleasure || "1"} type="radio" name="pleasure"  id="flexRadioDefault2" />

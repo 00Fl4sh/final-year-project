@@ -15,7 +15,7 @@ export default function Flex() {
                 <p>
                 Determine how much you are "stressed" in order to control your mental stress!    
                 </p>
-            <button className='btn1' >TAKE THE TEST</button>
+            <button className='btn1' onClick={()=>Navigate('/Stress')} >TAKE THE TEST</button>
             </div>
           
             <div>
@@ -30,7 +30,7 @@ export default function Flex() {
                 <p> If you are experiencing excessive and persistent worrying or fear about everyday situations or events, it’s a better idea to
                 assess your anxiety level. Take out your 2minutes. 
                 </p>
-                <button className='btn3' >TAKE THE TEST</button>
+                <button className='btn3' onClick={()=>Navigate('/Anxiety')} >TAKE THE TEST</button>
             </div>
     </div>
       <div>

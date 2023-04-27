@@ -29,24 +29,24 @@ function Take() {
     })
     .then(response9 => response9.json())
     .then(data => {
-        console.log('Request succeeded:', data["output"])
-        if (parseFloat(data["output"]) >= 98.7) {
-          console.log("A");
-          window.location.href = "/HighStress";
-        } else if (parseFloat(data["output"]) >= 41.15 && parseFloat(data["output"]) < 98.7) {
-          console.log("B");
-          window.location.href = "/ModStress";
-        } else if (parseFloat(data["output"]) >= 31.15 && parseFloat(data["output"]) < 41.15) {
-          console.log("c");
-          window.location.href = "/MinStress";
-        } else if (parseFloat(data["output"]) >= 14.099999999999998 && parseFloat(data["output"]) < 31.15) {
-          console.log("d");
-          window.location.href = "/MinimalStress";
-        // } else if (parseFloat(data["output"]) >= 60 && parseInt(data["output"]) < 70) {
+      console.log('Request succeeded:', data["output"])
+      if (parseFloat(data["output"]) >= 98.7) {
+        console.log("A");
+        window.location.href = "/HighAnxiety";
+      } else if (parseFloat(data["output"]) >= 41.15 && parseFloat(data["output"]) < 98.7) {
+        console.log("B");
+        window.location.href = "/ModAnxiety";
+      } else if (parseFloat(data["output"]) >= 31.15 && parseFloat(data["output"]) < 41.15) {
+        console.log("c");
+        window.location.href = "/MinAnxiety";
+      } else if (parseFloat(data["output"]) >= 14.099999999999998 && parseFloat(data["output"]) < 31.15) {
+        console.log("d");
+        window.location.href = "/MinimalAnxiety";        // } else if (parseFloat(data["output"]) >= 60 && parseInt(data["output"]) < 70) {
         //   console.log("D");
         //   window.location.href = "/Min";       
         } else {
-          console.log("/MinimalStress");
+          console.log("/MinimalAnxiety");
+          
         }
 
        
@@ -76,7 +76,7 @@ function Take() {
 {/* 1st que  */}
 
         <div className='check1'>
-            <h3 >Strained</h3> 
+            <h3  >Feeling nervous, anxious or on edge</h3> 
             
             <div className="form-check">
               <input  className="form-check-input" onChange={handleChange} value={formData.pleasure || "0"} type="radio" name="pleasure"  id="flexRadioDefault1"/>
@@ -107,7 +107,7 @@ function Take() {
 {/* 2nd que  */}
 
         <div className='check2' data-aos="fade-bottom">
-            <h3>Inadequate</h3> 
+            <h3>Not being able to stop or control worrying</h3> 
             
             <div className="form-check">
               <input  className="form-check-input" onChange={handleChange} value={formData.Feeling || "0"} type="radio" name="Feeling"  id="flexRadioDefault5"/>
@@ -138,7 +138,7 @@ function Take() {
 {/* 3rd que  */}
 
         <div className='check1'data-aos="fade-right">
-            <h3>Overextended</h3> 
+            <h3>Worrying too much about different things</h3> 
             
             <div className="form-check">
               <input  className="form-check-input" onChange={handleChange} value={formData.Trouble || "0"} type="radio" name="Trouble"  id="flexRadioDefault9"/>
@@ -168,7 +168,7 @@ function Take() {
 {/* 4th que  */}
 
         <div className='check2'data-aos="fade-left">
-            <h3> No sense of getting ahead</h3> 
+            <h3> Trouble relaxing</h3> 
             
             <div className="form-check">
               <input  className="form-check-input" onChange={handleChange} value={formData.tired || "0"} type="radio" name="tired"  id="flexRadioDefault13"/>
@@ -199,7 +199,7 @@ function Take() {
 {/* 5th que  */}
 
         <div className='check1'data-aos="fade-bottom">
-            <h3>Swamped by your responsibilities</h3> 
+            <h3>Being so restless that it is hard to sit still</h3> 
             
             <div className="form-check">
               <input  className="form-check-input" onChange={handleChange} value={formData.Poor || "0"} type="radio" name="Poor"  id="flexRadioDefault17"/>
@@ -230,7 +230,7 @@ function Take() {
 
 {/* 6rd que */}
 <div className='check2'data-aos="fade-right">
-            <h3>That the odds were against you</h3> 
+            <h3>Becoming easily annoyed or irritable</h3> 
             
             <div className="form-check">
               <input className="form-check-input" type="radio" onChange={handleChange} value={formData.Feeling_bad || "0"}  name="Feeling_bad" id="flexRadioDefault21"/>
@@ -261,7 +261,7 @@ function Take() {
 
 {/* 7rd que */}
 <div className='check1'data-aos="fade-left">
-            <h3>that there wasn't enough time to get to everything</h3> 
+            <h3>Feeling afraid as if something awful might happen</h3> 
             
             <div className="form-check">
               <input className="form-check-input" type="radio" onChange={handleChange} value={formData.concentrating || "0"} name="concentrating" id="flexRadioDefault25"/>
@@ -292,7 +292,7 @@ function Take() {
 
 {/* 8rd que */}
 <div className='check2'data-aos="fade-bottom">
-            <h3>like there was "too much to do, too little time</h3> 
+            <h3>Moving or speaking so slowly that other people could have noticed. Or the opposite being so figety or restless that you have been moving around a lot more than usual</h3> 
             
             <div className="form-check">
               <input className="form-check-input" type="radio" onChange={handleChange} value={formData.Moving || "3"} name="Moving" id="flexRadioDefault29"/>
@@ -322,7 +322,7 @@ function Take() {
 
 {/* 9rd que */}
 <div className='check1'data-aos="fade-bottom">
-            <h3>like you couldn't cope</h3> 
+            <h3>Thoughts that you would be better off dead, or of hurting yourself</h3> 
             
             <div className="form-check">
               <input className="form-check-input" type="radio" onChange={handleChange} value={formData.Thoughts || "0"} name="Thoughts" id="flexRadioDefault33"/>

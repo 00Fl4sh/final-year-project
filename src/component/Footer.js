@@ -38,8 +38,11 @@ const Footer = () => {
                         <i className="fa-brands fa-twitter fa-2xl"></i>
                         </a>
                      </li><br/> 
-                    <li><i className="fa-brands fa-linkedin fa-2xl"></i></li>
-                </ul>
+                     
+                    <li>
+                        <a href='https://www.linkedin.com/in/surya-mr-72a8b7217/' target='_blank' rel="noreferrer">
+                        <i className="fa-brands fa-linkedin fa-2xl"></i> </a></li></ul>
+                
             </div>
             </div>
             <hr/>
